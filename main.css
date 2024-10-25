@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.icerik {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.kutu {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 0 10px;
+    position: absolute;
+}
+
+.kutu1 {
+    animation: move 1s linear infinite;
+}
+
+.kutu2 {
+    animation: move 3s linear infinite;
+}
+
+.kutu3 {
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
